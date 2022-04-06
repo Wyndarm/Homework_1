@@ -638,7 +638,7 @@ body {
     .card-image {
         flex: 0 1 150px;
     
-        /* max-height: 150px; */
+        max-height: 150px;
         object-fit: fill;
         /* max-height: 50%; */
     }
