@@ -1,0 +1,80 @@
+.tabs {
+    margin: 0 0 31px 0;
+
+    &-block {
+        display: flex;
+        color: #34ACA7;
+    }
+
+    &-item {
+        background-color: #EFF8F7;
+        flex: 0 1 25%;
+        padding: 26px 20px 26px 20px;
+
+        &-item-active {
+            background-color:  #D9EFEC;
+        }
+    }
+
+    &-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &-name {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    
+    &-describtion {
+        font-style: italic;
+        font-size: 10px;
+        line-height: 19px;
+    }
+}
+
+
+@media (max-width: 1176px ) and (min-width: 993px) {
+
+    .tabs {
+
+        &-item {
+            padding: 10px;
+        }
+    
+        &-text {
+            align-items: center;
+        }
+    
+        &-name {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    
+        &-describtion {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+    .tabs {
+        margin: 0 0 21px 0;
+
+        &-name {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    
+    }
+
+    .subscribe-form-wrapper img {
+        align-self: flex-start;
+    }
+    
+}

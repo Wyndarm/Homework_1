@@ -1,0 +1,94 @@
+.cards {
+    margin-bottom: 25px;
+
+    &-block {
+        display: flex;
+        flex-wrap: wrap;     
+    }
+}
+
+.card {
+    flex: 1 1 22%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 23px;
+
+    &-image {
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+
+        flex: 0 1 143px;
+
+        padding: 10px;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    &-heading {
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #34ACA7; 
+    }
+
+    &-text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+    }
+
+    &-date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;    
+        letter-spacing: -0.02em;
+        color: #E5E5E5;
+    }
+
+    .card-read-more {
+
+        .card-date {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;    
+            letter-spacing: -0.02em;
+            color: #E5E5E5;
+        }
+        
+        .read-button {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            color: #34ACA7;
+        }
+    }
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.card > * {
+    margin-bottom: 10px;
+}
+
+.card > *:last-child {
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+    .card-image {
+        flex: 0 1 50px;
+    }
+
+}
