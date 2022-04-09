@@ -31,3 +31,26 @@
         padding: 14px 29px 14px 25px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .banner {
+        &-block {
+            height: 335px;
+            padding: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &-title {
+            align-items: stretch;
+        }
+
+        &-header {
+            opacity: 0.6;
+        }
+
+    }
+
+}
