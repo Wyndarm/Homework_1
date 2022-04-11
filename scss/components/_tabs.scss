@@ -14,10 +14,12 @@
 
     &-item:hover {
         background-color:  #D9EFEC;
+        transition: 0.5s;
     }
 
     &-item__active {
-        background-color:  #D9EFEC; 
+        background-color:  #D9EFEC;
+        
     }
 
     &-text {

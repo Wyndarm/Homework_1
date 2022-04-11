@@ -82,6 +82,15 @@
                 margin-left: 5px;
             }
         }
+
+        .to-left-btn:hover {
+
+            span {
+                opacity: 1;
+                transition: 1s;
+            }
+        }
+
     
         .to-right-btn {
             display: flex;
@@ -99,6 +108,14 @@
                 background-color: white;
                 opacity: 0.6;
                 margin-right: 5px;
+            }
+        }
+
+        .to-right-btn:hover {
+
+            span {
+                opacity: 1;
+                transition: 1s;
             }
         }
     }
