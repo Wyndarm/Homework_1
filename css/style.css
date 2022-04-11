@@ -483,6 +483,7 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
+    cursor: pointer;
   }
   .banner .to-left-btn span {
     font-size: 30px;
@@ -512,6 +513,7 @@ body {
     left: 50%;
     width: 50%;
     height: 100%;
+    cursor: pointer;
   }
   .banner .to-right-btn span {
     font-size: 30px;
@@ -545,6 +547,7 @@ body {
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   padding: 26px 20px 26px 20px;
+  cursor: pointer;
 }
 
 .tabs-item:hover {
