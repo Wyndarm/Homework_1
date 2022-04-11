@@ -1,0 +1,105 @@
+.banner {
+
+    &-block {
+        background-image: url("../img/baner-4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 285px 300px 69px 0px;
+        position: relative;
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &-header {
+        font-style: italic;
+        font-size: 22px;
+        line-height: 22px;
+        background-color: white;
+        padding: 14px 29px 14px 25px;
+    }
+
+    &-footer {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        background-color: black;
+        padding: 14px 29px 14px 25px;
+    }
+
+    .to-left-btn {
+        display: none;
+    }
+
+    .to-right-btn {
+        display: none;
+    }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        &-block {
+            height: 335px;
+            padding: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &-title {
+            align-items: stretch;
+        }
+
+        &-header {
+            opacity: 0.6;
+        }
+
+        .to-left-btn {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+ 
+            span {
+                font-size: 30px;
+                border-radius: 5px;
+                background-color: white;
+                opacity: 0.6;
+                margin-left: 5px;
+            }
+        }
+    
+        .to-right-btn {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+
+            span {
+                font-size: 30px;
+                border-radius: 5px;
+                background-color: white;
+                opacity: 0.6;
+                margin-right: 5px;
+            }
+        }
+    }
+}

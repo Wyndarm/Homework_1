@@ -37,29 +37,13 @@
     }
 
     &-icons {
+        flex: 0 1 105px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         & a {
-            margin-right: 4px;
-            max-width: 32px;
+            color: #E5E5E5;
         }
-
-        & a:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-@media (max-width: 1176px ) {
-
-    .footer-container {
-        max-width: 896px;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .footer-container {
-        max-width: 710px;
     }
 }

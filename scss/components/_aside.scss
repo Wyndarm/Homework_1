@@ -72,9 +72,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         
         & img {
-            max-width: 16px; 
+            max-width: 16px;
         }
 
         & p {
@@ -138,7 +139,8 @@
                 flex-wrap: wrap;
 
                 & li {
-                    flex: 0 1 100px;
+                    flex: 0 1 80px;
+                    margin-right: 10px;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
@@ -148,6 +150,10 @@
                     & img {
                         margin: 0px 0px 12px 0px;
                     }
+                }
+
+                & li:last-child {
+                    margin-right: 0;
                 }
             }
         }
