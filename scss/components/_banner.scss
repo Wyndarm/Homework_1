@@ -1,18 +1,38 @@
 .banner {
 
     &-block {
-        background-image: url("../img/baner-4.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         padding: 285px 300px 69px 0px;
         position: relative;
+        height: 445px;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: none;
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .slide__active {
+        display: block;
     }
 
     &-title {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        position: absolute;
+        // margin-top: 100px;
     }
 
     &-header {
@@ -39,10 +59,6 @@
     .to-right-btn {
         display: none;
     }
-
-
-
-
 }
 
 @media (max-width: 768px) {
